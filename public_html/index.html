@@ -1,0 +1,47 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Graph Navigation</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/myScript.js"></script>
+        <style type="text/css">
+            .node {
+                position:absolute;
+                border-radius:36px 36px 36px 36px;
+                width:70px;
+                height:70px;
+                border: 1px solid black;
+                background-color: lightgray;
+                cursor:pointer;
+            }
+            .node:hover {
+                background-color:white;
+                border-color: red;
+            }
+            #nodeContainer {
+                min-height: 400px;
+                min-width: 90%;
+                background-color: appworkspace;
+                
+            }
+            #popupDescription {
+                min-width:80px;
+                min-height: 30px;
+                background-color: darkgray;
+                color:white;
+                font-weight: bold;
+                display:none;
+                position:absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="nodeContainer"></div>
+        <div id="popupDescription">Some Descr</div>
+    </body>
+</html>
